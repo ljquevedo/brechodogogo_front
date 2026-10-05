@@ -46,7 +46,7 @@ export default function AdminLogin() {
         <form onSubmit={handleSubmit(aoEnviar)} className="flex flex-col gap-3">
           <div>
             <input
-              type="email"
+              type="text"
               placeholder="E-mail"
               className="w-full rounded border border-gray-300 px-3 py-2 outline-none focus:border-gray-600"
               {...register('email', { required: 'Informe o e-mail' })}
