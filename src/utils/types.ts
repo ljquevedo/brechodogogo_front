@@ -53,3 +53,20 @@ export type PropostaType = {
   createdAt: string
   respondidoEm: string | null
 }
+
+export type OfertaVendaType = {
+  id: number
+  descricao: string
+  marca: string | null
+  tamanho: string
+  precoDesejado: number
+  foto: string
+  detalhes: string | null
+  condicao: CondicaoPeca
+  resposta: string | null
+  status: StatusProposta
+  clienteId: string
+  cliente?: ClienteType
+  createdAt: string
+  respondidoEm: string | null
+}

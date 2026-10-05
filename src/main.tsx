@@ -12,6 +12,7 @@ import Login from './Login.tsx'
 import Cadastro from './Cadastro.tsx'
 import Detalhes from './Detalhes.tsx'
 import MinhasPropostas from './MinhasPropostas.tsx'
+import VenderRoupa from './VenderRoupa.tsx'
 
 import AdminLogin from './admin/AdminLogin.tsx'
 import AdminLayout from './admin/AdminLayout.tsx'
@@ -19,6 +20,7 @@ import AdminDashboard from './admin/AdminDashboard.tsx'
 import AdminPecas from './admin/AdminPecas.tsx'
 import AdminClientes from './admin/AdminClientes.tsx'
 import AdminPropostas from './admin/AdminPropostas.tsx'
+import AdminOfertas from './admin/AdminOfertas.tsx'
 
 const rotas = createBrowserRouter([
   {
@@ -30,6 +32,7 @@ const rotas = createBrowserRouter([
       { path: 'cadastro', element: <Cadastro /> },
       { path: 'detalhes/:pecaId', element: <Detalhes /> },
       { path: 'minhas-propostas', element: <MinhasPropostas /> },
+      { path: 'vender', element: <VenderRoupa /> },
     ],
   },
   { path: '/admin/login', element: <AdminLogin /> },
@@ -41,6 +44,7 @@ const rotas = createBrowserRouter([
       { path: 'pecas', element: <AdminPecas /> },
       { path: 'clientes', element: <AdminClientes /> },
       { path: 'propostas', element: <AdminPropostas /> },
+      { path: 'ofertas', element: <AdminOfertas /> },
     ],
   },
 ])

@@ -21,7 +21,7 @@ export default function AdminLayout() {
   return (
     <div className="flex min-h-screen">
       <aside className="w-60 shrink-0 bg-gray-900 p-4">
-        <h2 className="mb-6 text-lg font-bold text-white">Brechó Recomeço</h2>
+        <h2 className="mb-6 text-lg font-bold text-white">Brechó do Gogó</h2>
         <nav className="flex flex-col gap-1">
           <NavLink to="/admin" end className={linkClasse}>
             Visão Geral
@@ -34,6 +34,9 @@ export default function AdminLayout() {
           </NavLink>
           <NavLink to="/admin/propostas" className={linkClasse}>
             Controle de Propostas
+          </NavLink>
+          <NavLink to="/admin/ofertas" className={linkClasse}>
+            Ofertas de Venda
           </NavLink>
           <button
             onClick={() => {
