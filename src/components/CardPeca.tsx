@@ -22,7 +22,7 @@ export default function CardPeca({ peca }: Props) {
       <img
         src={peca.foto}
         alt={peca.descricao}
-        className={`h-56 w-full object-cover ${reservada ? 'opacity-70' : ''}`}
+        className={`h-56 w-full bg-white object-contain ${reservada ? 'opacity-70' : ''}`}
       />
       <div className="flex flex-1 flex-col gap-1 p-3">
         <span className="text-xs uppercase text-emerald-700">{peca.categoria.nome}</span>
